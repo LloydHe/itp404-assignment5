@@ -1,0 +1,12 @@
+
+{{#each model.data.children as |subreddit|}}
+
+<div id="emberBootstrap">
+  <hr/>
+  <p><b>num_comments: </b> {{subreddit.data.num_comments}}</p>
+  <p><b>ups: </b>{{subreddit.data.ups}}</p>
+  <p><b>downs: </b>{{subreddit.data.downs}}</p>
+  <p><b>title: </b> {{subreddit.data.title}}</p>
+  <p><b>domain: </b>{{subreddit.data.domain}}</p>
+</div>
+{{/each}}

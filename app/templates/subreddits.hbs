@@ -1,7 +1,8 @@
-{{#each model.data.children as |subreddit|}}
+{{#each model as |subreddit|}}
 
 <div id="emberBootstrap">
   <hr/>
+  <img src= "{{subreddit.data.thumbnail}}">
   <p><b>num_comments: </b> {{subreddit.data.num_comments}}</p>
   <p><b>ups: </b>{{subreddit.data.ups}}</p>
   <p><b>downs: </b>{{subreddit.data.downs}}</p>

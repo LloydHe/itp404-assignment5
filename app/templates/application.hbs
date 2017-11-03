@@ -1,8 +1,11 @@
 <h1>Reddit</h1>
 
+<form onsubmit={{action "search"}}>
 
-{{input type = "text" value = subreddit}}
+  {{input type = "text" value = subreddit}}
 
-<button onclick={{action "search"}}>Search</button>
+  <button type=submit>Submit</button>
+
+</form>
 
 {{outlet}}

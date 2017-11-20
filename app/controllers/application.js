@@ -1,6 +1,7 @@
 import Controller from '@ember/controller';
 
 export default Controller.extend({
+
   actions: {
     search(e) {
       e.preventDefault();
@@ -8,4 +9,7 @@ export default Controller.extend({
       this.transitionToRoute('subreddits', subreddit);
     }
   }
+
+
+
 });

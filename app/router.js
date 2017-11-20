@@ -11,6 +11,7 @@ Router.map(function() {
     path: 'subreddits/:subreddit',
   }
 );
+  this.route('unread');
 });
 
 export default Router;
